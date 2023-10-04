@@ -1,5 +1,8 @@
+/**** Main Styles ****/
+
+
 .App {
-  min-width: 295px;
+  min-width: 315px;
   letter-spacing: 2px;
   overflow: hidden;
   background-image: url("./Components/Images/background.png");

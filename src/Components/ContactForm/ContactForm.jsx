@@ -12,7 +12,7 @@ export default function Contact() {
       return <p className='sub-heading'>Response guaranteed within 48 hours!</p>;
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="contact-form" onSubmit={handleSubmit}>
     <p className='sub-heading'>Contact Form</p>
     <div>
       <label htmlFor="full-name">
@@ -20,11 +20,11 @@ export default function Contact() {
       </label>
       &nbsp;
       <input
-        id="name"
+        id="full-name"
         type="text" 
         name="name"
         required
-        expression="^[A-Za-z][A-Za-z0-9]*$]"
+        regexp="^[A-Za-z][A-Za-z0-9]*$]"
       />
       <ValidationError 
         prefix="Name" 
@@ -41,6 +41,8 @@ export default function Contact() {
         id="email"
         type="email" 
         name="email"
+        required
+        regexp="^[A-Za-z][A-Za-z0-9]*$]"
       />
       <ValidationError 
         prefix="Email" 
