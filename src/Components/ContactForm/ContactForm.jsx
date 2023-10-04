@@ -24,7 +24,7 @@ export default function Contact() {
         type="text" 
         name="name"
         required
-        regexp="^[A-Za-z][A-Za-z0-9]*$]"
+        pattern=".*[^ ].*"
       />
       <ValidationError 
         prefix="Name" 
@@ -42,7 +42,6 @@ export default function Contact() {
         type="email" 
         name="email"
         required
-        regexp="^[A-Za-z][A-Za-z0-9]*$]"
       />
       <ValidationError 
         prefix="Email" 
