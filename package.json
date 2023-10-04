@@ -1,7 +1,7 @@
 {
   "name": "browser-parking-lot-react",
   "version": "0.1.0",
-  "homepage": "https://github.com/catieeking509/browser-parking-lot-react.git",
+  "homepage": "https://catieeking509.github.io/browser-parking-lot-react",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.5.1",

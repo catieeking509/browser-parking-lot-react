@@ -23,6 +23,8 @@ export default function Contact() {
         id="name"
         type="text" 
         name="name"
+        required
+        expression="^[A-Za-z][A-Za-z0-9]*$]"
       />
       <ValidationError 
         prefix="Name" 
