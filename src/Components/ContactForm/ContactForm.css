@@ -1,0 +1,11 @@
+
+form {
+    max-width: 500px;
+    margin: 10px 50px 25px 50px;
+    display: grid;
+    grid-row-gap: 5px;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+  }
+

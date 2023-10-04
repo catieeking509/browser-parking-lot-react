@@ -1,0 +1,83 @@
+
+/**** Main Styles ****/
+
+.parking-lot-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 0;
+    margin-bottom: 100px;
+}
+
+.card {
+    text-align: center;
+    background-color: rgb(140,129,118);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-button {
+    background-color: transparent;
+    font-weight: 500;
+    border: hidden;
+    text-shadow: 1px 2px 2px #7A7A7A;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-button {
+    width: 45px;
+    padding: 2px;
+}
+
+.cancel-button {
+    background-color: transparent;
+    border: hidden;
+    text-shadow: 1px 2px 2px #7A7A7A;
+    padding: 15px;
+    font-style: italic;
+}
+
+.btn-secondary {
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-active-bg: transparent;
+}
+
+.link-button {
+    background-color: transparent;
+    border: hidden;
+    text-shadow: 1px 2px 2px #7A7A7A;
+}
+
+.btn {
+    vertical-align: bottom;
+}
+
+
+/**** Media Queries ****/
+
+
+@media screen and (max-width: 576px) {
+    .parking-lot-list-container {
+        margin-top: 40px;
+    }
+    
+    .card {
+        max-width: 200px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .edit-button {
+        padding: 0;
+    }
+}

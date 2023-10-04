@@ -1,0 +1,13 @@
+/*** Main Styles ***/
+
+.navbar {
+    margin: 15px 15px 80px 15px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+    border-bottom: 7px double #57372c
+}
+
+.nav-link {
+    text-shadow: #bfb9b8 0 -1px 90px, #877670 0 -1px 50px, #63584d 0 -1px 10px, #211f1f 0 -50px 90px;
+}

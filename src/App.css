@@ -1,0 +1,98 @@
+.App {
+  min-width: 295px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  background-image: url("./Components/Images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: #dfd8ce70;
+}
+
+
+.header {
+  margin: 20px;
+  text-align: center;
+  color: #262725;
+  text-shadow: #bfb9b8 0 -1px 90px, #877670 0 -1px 50px, #63584d 0 -1px 10px, #211f1f 0 -50px 90px;
+}
+
+.sub-heading {
+  font-style: italic;
+  margin: 20px;
+  color: #57372c;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: #bfb9b8 0 -1px 90px, #877670 0 -1px 50px, #63584d 0 -1px 10px, #211f1f 0 -50px 90px;
+}
+
+.action-button {
+  background-color: #6f554d;
+  color: whitesmoke;
+  font-weight: 500;
+  font-style: italic;
+  -webkit-border-radius: 15px 0px 15px 0px;
+  border-radius: 15px 0px 15px 0px;
+  --bs-btn-hover-border-color: #57372c;
+  --bs-btn-hover-color: #57372c;
+  text-shadow: 1px 2px 2px #7A7A7A;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-image {
+  opacity: 80%;
+  border-radius: 50%;
+  max-width: 500px;
+  padding: 50px 25px 25px 75px;
+}
+
+
+
+/*** Footer Styles ***/
+
+footer {
+  text-align: end;
+  margin: 100px 20px 5px;
+  font-size: x-small;
+}
+
+
+/**** Media Queries ****/
+
+@media screen and (max-width: 768px) {
+  .contact-image {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+  .header {
+    margin: 15px;
+    line-height: 1;
+  }
+  
+  .sub-heading {
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .contact-form-container {
+    display: grid;
+    justify-items: center;
+  }
+
+  .contact-image {
+    opacity: 80%;
+    border-radius: 50%;
+    max-width: 50%;
+    padding: 0 0 50px 0;
+  }
+  
+}
