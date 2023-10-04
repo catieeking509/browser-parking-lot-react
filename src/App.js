@@ -66,9 +66,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <NavBar />
-      </div>
+      <NavBar />
       <h1 className="header">BROWSER PARKING LOT</h1>
       <p className="sub-heading">less tabs = less stress!</p>
       <main>
