@@ -14,7 +14,7 @@ function mdyToYmd(mdyString) {
   return `${y}-${M}-${d}`;
 }
 
-export default function ParkingLotForm({ submitItem, defaultDate = '', defaultPriority = PRIORITIES.Medium, defaultLink = '', defaultDescription = '' }) {
+export default function ParkingLotForm({ submitItem, defaultDate = '', defaultPriority = PRIORITIES.Medium, defaultLink = '', defaultDescription = '', cardId = 'create-form' }) {
 
   
 
@@ -56,11 +56,11 @@ function handleSubmit(e) {
     <div className="form-container">
       <Form data-bs-theme="light" className="parking-lot-form" onSubmit={handleSubmit}>
         <FormGroup className="parking-lot-row">
-          <Label for="link-date">
+          <Label for={"link-date-" + cardId}>
             Date
           </Label>
           <Input  
-            id="link-date"
+            id={"link-date-" + cardId}
             name="date"
             type="date"
             value={date}
@@ -69,11 +69,11 @@ function handleSubmit(e) {
           />
         </FormGroup>
         <FormGroup className="parking-lot-row">
-          <Label for="link-url">
+          <Label for={"link-url" + cardId}>
             Link
           </Label>
           <Input  
-            id="link-url"
+            id={"link-url" + cardId}
             name="url"
             type="url"
             value={link}
@@ -82,11 +82,11 @@ function handleSubmit(e) {
           />
         </FormGroup>
         <FormGroup className="parking-lot-row">
-          <Label for="link-description">
+          <Label for={"link-description" + cardId}>
             Description
           </Label>
           <Input  
-            id="link-description"
+            id={"link-description" + cardId}
             name="description"
             type="text"
             value={description}
@@ -99,13 +99,13 @@ function handleSubmit(e) {
             <Input
               name="radio-priority"
               type="radio"
-              id= "priority-high"
+              id={"priority-high" + cardId}
               value= "High"
               checked= {priority === PRIORITIES.High}
               onChange= {handlePriorityChange}
             />
             &nbsp;
-            <Label for="priority-high" className="radio-label me-3">
+            <Label for={"priority-high" + cardId} className="radio-label me-3">
               HIGH
             </Label>
           </div>
@@ -113,13 +113,13 @@ function handleSubmit(e) {
             <Input
               name="radio-priority"
               type="radio"
-              id= "priority-medium"
+              id={"priority-medium" + cardId}
               value= "Medium"
               checked= {priority === PRIORITIES.Medium}
               onChange= {handlePriorityChange}
             />
             &nbsp;
-            <Label for="priority-medium"  className="radio-label me-3">
+            <Label for={"priority-medium" + cardId} className="radio-label me-3">
               MEDIUM
             </Label>
           </div>
@@ -127,13 +127,13 @@ function handleSubmit(e) {
             <Input
               name="radio-priority"
               type="radio"
-              id= "priority-low"
+              id={"priority-low" + cardId}
               value= "Low"
               checked= {priority === PRIORITIES.Low}
               onChange= {handlePriorityChange}
             />
             &nbsp;
-            <Label for="priority-low"  className="radio-label">
+            <Label for={"priority-low" + cardId}  className="radio-label">
               LOW
             </Label>
           </div>

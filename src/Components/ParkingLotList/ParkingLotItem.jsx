@@ -51,7 +51,7 @@ export default function ParkingLotItem( {id, date, priority, link, description, 
 
   const EditCardContentJsx = (
     <>
-      <ParkingLotForm submitItem={updateItem} defaultDate={date} defaultPriority={priority} defaultLink={link} defaultDescription={description} />
+      <ParkingLotForm submitItem={updateItem} defaultDate={date} defaultPriority={priority} defaultLink={link} defaultDescription={description} cardId={id} />
       <div className="button-container">
         <Button className="cancel-button" onClick={handleCancel}>cancel</Button>
       </div>
