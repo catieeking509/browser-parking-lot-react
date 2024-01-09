@@ -34,4 +34,4 @@ SO THAT I can make my browser easier to navigate during working hours
 
 ## Project Notes
 
-This "browser parking lot" is a single place to store a to-do list of web pages that need to be revisited. It uses react and css. In the future, I would like to imporve on my understanding, planning process, and time management. Other deliverables are inclosed within the wireframe folder.
+This "browser parking lot" is a single place to store a to-do list of web pages that need to be revisited. Other deliverables are inclosed within the wireframe folder.
